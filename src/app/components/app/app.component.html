@@ -1,0 +1,256 @@
+<mat-toolbar class="header" id="heading">
+  <mat-toolbar-row>
+    <div class="header-basis">
+      <div class="header-left">
+        <a href="index.html" class="logo">
+          <img src="assets/images/logo1.png" alt="Logo" class="sidebar-logo">
+
+        </a>
+      </div>
+      <button mat-icon-button id="toggle_btn" (click)="toggleSideNav();">
+        <mat-icon>menu</mat-icon>
+      </button>
+    </div>
+    <ul class="nav user-menu">
+      <li class="nav-item">
+        <div class="top-nav-search">
+          <a href="javascript:void(0);" class="responsive-search">
+            <i class="fa fa-search"></i>
+          </a>
+          <form action="search.html">
+            <input class="form-control" type="text" placeholder="Search here">
+            <button class="btn" type="submit"><mat-icon aria-hidden="false" aria-label="Example home icon"
+                                                        fontIcon="search"></mat-icon></button>
+          </form>
+        </div>
+      </li>
+      <li class="not-button nav-item dropdown">
+        <button mat-icon-button data-bs-toggle="dropdown" class="dropdown-toggle nav-link"
+                aria-expanded="false">
+          <mat-icon matBadge="15">notifications</mat-icon>
+        </button>
+        <div class="dropdown-menu notifications">
+          <div class="topnav-dropdown-header"><span class="notification-title">Notifications</span><a
+            href="javascript:void(0)" class="clear-noti"> Clear All </a></div>
+          <div class="noti-content">
+            <ul class="notification-list p-0">
+              <li class="notification-message"><a href="#">
+                <div class="media d-flex"><span class="avatar flex-shrink-0"><img alt=""
+                                                                                  src="assets/images/person-8.jpg"></span>
+                  <div class="media-body flex-grow-1">
+                    <p class="noti-details"><span class="noti-title">John Doe</span> added new
+                      task <span class="noti-title">Patient appointment booking</span></p>
+                    <p class="noti-time"><span class="notification-time">4 mins ago</span></p>
+                  </div>
+                </div>
+              </a></li>
+              <li class="notification-message"><a href="#">
+                <div class="media d-flex"><span class="avatar flex-shrink-0"><img alt=""
+                                                                                  src="assets/images/person-2.jpg"></span>
+                  <div class="media-body flex-grow-1">
+                    <p class="noti-details"><span class="noti-title">Tarah Shropshire</span>
+                      changed the task name <span class="noti-title">Appointment booking with
+                                                    payment gateway</span></p>
+                    <p class="noti-time"><span class="notification-time">6 mins ago</span></p>
+                  </div>
+                </div>
+              </a></li>
+              <li class="notification-message"><a href="#">
+                <div class="media d-flex"><span class="avatar flex-shrink-0"><img alt=""
+                                                                                  src="assets/images/person-5.jpg"></span>
+                  <div class="media-body flex-grow-1">
+                    <p class="noti-details"><span class="noti-title">Misty Tison</span> added
+                      <span class="noti-title">Domenic Houston</span> and <span
+                        class="noti-title">Claire Mapes</span> to project <span
+                        class="noti-title">Doctor available module</span>
+                    </p>
+                    <p class="noti-time"><span class="notification-time">8 mins ago</span></p>
+                  </div>
+                </div>
+              </a></li>
+              <li class="notification-message"><a href="#">
+                <div class="media d-flex"><span class="avatar flex-shrink-0"><img alt=""
+                                                                                  src="assets/images/person-6.jpg"></span>
+                  <div class="media-body flex-grow-1">
+                    <p class="noti-details"><span class="noti-title">Rolland Webber</span>
+                      completed task <span class="noti-title">Patient and Doctor video
+                                                    conferencing</span></p>
+                    <p class="noti-time"><span class="notification-time">12 mins ago</span></p>
+                  </div>
+                </div>
+              </a></li>
+              <li class="notification-message"><a href="#">
+                <div class="media d-flex"><span class="avatar flex-shrink-0"><img alt=""
+                                                                                  src="assets/images/person-1.jpg"></span>
+                  <div class="media-body flex-grow-1">
+                    <p class="noti-details"><span class="noti-title">Bernardo Galaviz</span>
+                      added new task <span class="noti-title">Private chat module</span></p>
+                    <p class="noti-time"><span class="notification-time">2 days ago</span></p>
+                  </div>
+                </div>
+              </a></li>
+            </ul>
+          </div>
+          <div class="topnav-dropdown-footer"><a href="#">View all
+            Notifications</a></div>
+        </div>
+      </li>
+      <li class="not-button nav-item dropdown">
+        <button mat-icon-button data-bs-toggle="dropdown" class="dropdown-toggle nav-link"
+                aria-expanded="false">
+          <mat-icon matBadge="8">message</mat-icon>
+        </button>
+        <div  class="dropdown-menu notifications" >
+          <div  class="topnav-dropdown-header"><span
+            class="notification-title">Messages</span><a  href="javascript:void(0)"
+                                                          class="clear-noti"> Clear All </a></div>
+          <div  class="noti-content">
+            <ul  class="notification-list p-0">
+              <li  class="notification-message"><a
+                href="#">
+                <div  class="list-item">
+                  <div  class="list-left"><span
+                    class="avatar"><img  alt=""
+                                         src="assets/images/person-1.jpg"></span></div>
+                  <div  class="list-body"><span
+                    class="message-author">Richard Miles </span><span
+                    class="message-time">12:28 AM</span>
+                    <div  class="clearfix"></div><span
+                      class="message-content">Lorem ipsum dolor sit
+                                                amet, consectetur adipiscing</span>
+                  </div>
+                </div>
+              </a></li>
+              <li  class="notification-message"><a
+                href="#">
+                <div  class="list-item">
+                  <div  class="list-left"><span
+                    class="avatar"><img  alt=""
+                                         src="assets/images/person-2.jpg"></span></div>
+                  <div  class="list-body"><span
+                    class="message-author">John Doe</span><span
+                    class="message-time">6 Mar</span>
+                    <div  class="clearfix"></div><span
+                      class="message-content">Lorem ipsum dolor sit
+                                                amet, consectetur adipiscing</span>
+                  </div>
+                </div>
+              </a></li>
+              <li  class="notification-message"><a
+                href="#">
+                <div  class="list-item">
+                  <div  class="list-left"><span
+                    class="avatar"><img  alt=""
+                                         src="assets/images/person-3.jpg"></span></div>
+                  <div  class="list-body"><span
+                    class="message-author"> Tarah Shropshire </span><span
+                    class="message-time">5 Mar</span>
+                    <div  class="clearfix"></div><span
+                      class="message-content">Lorem ipsum dolor sit
+                                                amet, consectetur adipiscing</span>
+                  </div>
+                </div>
+              </a></li>
+              <li  class="notification-message"><a
+                href="#">
+                <div  class="list-item">
+                  <div  class="list-left"><span
+                    class="avatar"><img  alt=""
+                                         src="assets/images/person-4.jpg"></span></div>
+                  <div  class="list-body"><span
+                    class="message-author">Mike Litorus</span><span
+                    class="message-time">3 Mar</span>
+                    <div  class="clearfix"></div><span
+                      class="message-content">Lorem ipsum dolor sit
+                                                amet, consectetur adipiscing</span>
+                  </div>
+                </div>
+              </a></li>
+              <li  class="notification-message"><a
+                href="#">
+                <div  class="list-item">
+                  <div  class="list-left"><span
+                    class="avatar"><img  alt=""
+                                         src="assets/images/person-5.jpg"></span></div>
+                  <div  class="list-body"><span
+                    class="message-author"> Catherine Manseau </span><span
+                    class="message-time">27 Feb</span>
+                    <div  class="clearfix"></div><span
+                      class="message-content">Lorem ipsum dolor sit
+                                                amet, consectetur adipiscing</span>
+                  </div>
+                </div>
+              </a></li>
+            </ul>
+          </div>
+          <div  class="topnav-dropdown-footer"><a
+            href="#">View all Messages</a></div>
+        </div>
+      </li>
+      <li class="nav-item dropdown has-arrow main-drop">
+        <a href="#" class="dropdown-toggle nav-link" data-bs-toggle="dropdown">
+                    <span class="user-img"><img src="assets/images/testi-person.jpg" alt="">
+                        <span class="status online"></span></span>
+          <span>Admin</span>
+        </a>
+        <div class="dropdown-menu animate slideIn">
+          <a mat-button class="dropdown-item" href="#"><mat-icon>person</mat-icon><span>My Profile</span></a>
+          <a mat-button class="dropdown-item" href="#"><mat-icon>settings</mat-icon><span>Settings</span></a>
+          <a mat-button class="dropdown-item" href="#"><mat-icon>logout</mat-icon><span>Logout</span></a>
+        </div>
+      </li>
+    </ul>
+  </mat-toolbar-row>
+</mat-toolbar>
+<mat-sidenav-container>
+  <mat-sidenav #sideNav mode="side" disableClose="true" opened="true">
+    <button class="nav-item nav-profile">
+      <a href="javascript:void(0);" class="nav-link">
+        <div class="nav-profile-image">
+          <img src="assets/images/testi-person.jpg" alt="profile">
+        </div>
+        <div class="nav-profile-text d-flex flex-column">
+          <span class="text-white font-weight-bold">David Grey. H</span>
+          <span class="text-white font-weight-light text-small">Project Manager</span>
+        </div>
+      </a>
+    </button>
+    <a mat-button class="menu-button" (click)="goToPage('dashboard')">
+      <mat-icon>home</mat-icon>
+      <span> Home</span>
+    </a>
+    <mat-divider></mat-divider>
+    <a mat-button href="#" class="menu-button">
+      <mat-icon>checklist</mat-icon>
+      <span>Inbox</span>
+    </a>
+    <mat-divider></mat-divider>
+    <a mat-button (click)="goToPage('profile')" class="menu-button">
+      <mat-icon>account_box</mat-icon>
+      <span>Me</span>
+    </a>
+    <mat-divider></mat-divider>
+    <a mat-button href="#" class="menu-button">
+      <mat-icon>group</mat-icon>
+      <span>My Team</span>
+    </a>
+    <mat-divider></mat-divider>
+    <a mat-button href="#" class="menu-button">
+      <mat-icon>business</mat-icon>
+      <span>Companies</span>
+    </a>
+    <mat-divider></mat-divider>
+    <a mat-button href="#" class="menu-button">
+      <mat-icon>attach_money</mat-icon>
+      <span>My Finances</span>
+    </a>
+    <mat-divider></mat-divider>
+  </mat-sidenav>
+  <mat-sidenav-content>
+    <div class="g-content">
+      <router-outlet></router-outlet>
+      <!-- <app-home class="content-component"></app-home> -->
+      <!-- <app-profile class="content-component"></app-profile> -->
+    </div>
+  </mat-sidenav-content>
+</mat-sidenav-container>

@@ -1,0 +1,43 @@
+<h1 mat-dialog-title>{{title}}</h1>
+<div mat-dialog-content>
+  <form [formGroup]="studentForm">
+    <mat-form-field appearance="outline">
+      <mat-label>Student Name</mat-label>
+      <input formControlName="studentName" matInput placeholder="Name">
+    </mat-form-field>
+    <mat-form-field appearance="outline">
+      <mat-label>Standard</mat-label>
+      <mat-select formControlName="studentStd" placeholder="Standard">
+        <mat-option [value]="8">8</mat-option>
+        <mat-option [value]="9">9</mat-option>
+        <mat-option [value]="10">10</mat-option>
+        <mat-option [value]="11">11</mat-option>
+        <mat-option [value]="12">12</mat-option>
+      </mat-select>
+    </mat-form-field>
+    <mat-form-field appearance="outline">
+      <mat-label>Admission Date</mat-label>
+      <input formControlName="studentAdmissionDate" matInput placeholder="Choose Date" [matDatepicker]="datePicker">
+      <mat-datepicker-toggle matSuffix [for]="datePicker"></mat-datepicker-toggle>
+      <mat-datepicker #datePicker></mat-datepicker>
+    </mat-form-field>
+    <label id="example-radio-group-label">Division</label>
+    <mat-radio-group formControlName="studentDivision" aria-labelledby="example-radio-group-label" class="example-radio-group">
+      <mat-radio-button class="example-radio-button" *ngFor="let division of divisionOptions" [value]="division">
+        {{division}}
+      </mat-radio-button>
+    </mat-radio-group>
+    <mat-form-field appearance="outline">
+      <mat-label>Contact No</mat-label>
+      <input formControlName="studentContactNo" matInput type="number" placeholder="Contact No">
+    </mat-form-field>
+    <mat-form-field appearance="outline">
+      <mat-label>Address</mat-label>
+      <textarea formControlName="studentAddress" matInput></textarea>
+    </mat-form-field>
+  </form>
+</div>
+<div mat-dialog-actions [align]="'end'">
+  <button mat-raised-button color="warn" mat-dialog-close>Close</button>
+  <button style="margin-left: 10px;" mat-raised-button color="primary" (click)="addStudent()">{{studentData && studentData.id ? 'Update' : 'Save'}}</button>
+</div>

@@ -1,0 +1,228 @@
+span.message-number {
+  font-size: 38px;
+}
+
+.inbox-card-content {
+  font-size: 12px;
+}
+
+.message-count {
+  flex: 0 0 6%;
+}
+
+.inbox-card-content p {
+  flex: 1 0 0;
+  margin-bottom: 0;
+}
+
+.inbox-card-action {
+  padding: 0;
+}
+
+.inbox-card-content button {
+  font-size: 12px;
+  padding: 9px;
+  height: 28px;
+  line-height: 8px;
+  background: #ff9b44;
+  background: linear-gradient(to right,#ff9b44 0%,#fc6075 100%);
+  color: #fff;
+}
+
+/*holiday*/
+.holidays-card {
+  background-image: url('/assets/images/riboon.jpg');
+  background-size: cover;
+}
+
+.holidays-card-content {
+  padding: 0 53px;
+}
+
+#myCarousel .carousel-control-next-icon,
+#myCarousel .carousel-control-prev-icon {
+  width: 18px;
+  height: 18px;
+  background-size: 24px;
+}
+
+#myCarousel .carousel-control-next-icon {
+  background-image: url("data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiA/PjwhRE9DVFlQRSBzdmcgIFBVQkxJQyAnLS8vVzNDLy9EVEQgU1ZHIDEuMS8vRU4nICAnaHR0cDovL3d3dy53My5vcmcvR3JhcGhpY3MvU1ZHLzEuMS9EVEQvc3ZnMTEuZHRkJz48c3ZnIGhlaWdodD0iNTEycHgiIGlkPSJMYXllcl8xIiBzdHlsZT0iZW5hYmxlLWJhY2tncm91bmQ6bmV3IDAgMCA1MTIgNTEyOyIgdmVyc2lvbj0iMS4xIiB2aWV3Qm94PSIwIDAgNTEyIDUxMiIgd2lkdGg9IjUxMnB4IiB4bWw6c3BhY2U9InByZXNlcnZlIiB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHhtbG5zOnhsaW5rPSJodHRwOi8vd3d3LnczLm9yZy8xOTk5L3hsaW5rIj48cG9seWdvbiBwb2ludHM9IjE2MCwxMTUuNCAxODAuNyw5NiAzNTIsMjU2IDE4MC43LDQxNiAxNjAsMzk2LjcgMzEwLjUsMjU2ICIvPjwvc3ZnPg==") !important;
+
+}
+
+#myCarousel .carousel-control-prev-icon {
+  background-image: url("data:image/svg+xml;base64, PD94bWwgdmVyc2lvbj0iMS4wIiA/PjwhRE9DVFlQRSBzdmcgIFBVQkxJQyAnLS8vVzNDLy9EVEQgU1ZHIDEuMS8vRU4nICAnaHR0cDovL3d3dy53My5vcmcvR3JhcGhpY3MvU1ZHLzEuMS9EVEQvc3ZnMTEuZHRkJz48c3ZnIGhlaWdodD0iNTEycHgiIGlkPSJMYXllcl8xIiBzdHlsZT0iZW5hYmxlLWJhY2tncm91bmQ6bmV3IDAgMCA1MTIgNTEyOyIgdmVyc2lvbj0iMS4xIiB2aWV3Qm94PSIwIDAgNTEyIDUxMiIgd2lkdGg9IjUxMnB4IiB4bWw6c3BhY2U9InByZXNlcnZlIiB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHhtbG5zOnhsaW5rPSJodHRwOi8vd3d3LnczLm9yZy8xOTk5L3hsaW5rIj48cG9seWdvbiBwb2ludHM9IjM1MiwxMTUuNCAzMzEuMyw5NiAxNjAsMjU2IDMzMS4zLDQxNiAzNTIsMzk2LjcgMjAxLjUsMjU2ICIvPjwvc3ZnPg==") !important;
+}
+
+.holiday-card-action a {
+  background: #ff9b44;
+  background: linear-gradient(to right,#ff9b44 0%,#fc6075 100%);
+  color: #fff;
+}
+
+.holidays-card-content:first-child {
+  padding-top: 0;
+}
+
+.holidays-card-content {
+  color: #1f1f1f;
+}
+
+/*on Leave Today*/
+.no-leave {
+  background-image: url(/assets/images/no-leave.png);
+  background-size: 30%;
+  background-repeat: no-repeat;
+  background-position: 91% 90%;
+}
+
+.no-leave .leave-card-content {
+  color: #7a8c96;
+}
+
+.on-leave-block {
+  max-width: 72px;
+}
+
+.avatar {
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 100%;
+  width: 50px;
+  height: 50px;
+  font-weight: 600;
+  background-color: #ff9b4433;
+  color: #ff9b44;
+}
+
+.avatar img {
+  width: 100%;
+  border-radius: 100%;
+}
+
+.on-leave-name {
+  display: block;
+  font-size: 14px;
+  font-weight: 500;
+  line-height: 18px;
+  text-transform: capitalize;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  display: -webkit-box;
+  -webkit-line-clamp: 1;
+  /* number of lines to show */
+  line-clamp: 1;
+  -webkit-box-orient: vertical;
+}
+
+.remontely {
+  position: relative;
+}
+
+.remontely span.remote {
+  position: absolute;
+  top: 0;
+  right: 0;
+}
+
+.remontely .mat-icon {
+  font-size: 12px;
+  width: 17px;
+  height: 17px;
+  line-height: 16px;
+  border: 1px solid;
+  border-radius: 50%;
+  background-color: #ff9b44;
+  text-align: center;
+  color:#fff
+}
+
+/*Timer card*/
+.timer-card {
+  background-color: #9785c1;
+  color: #fff;
+  padding: 16px 11px;
+}
+
+.current-time-block .cur-time-title {
+  font-size: 12px;
+}
+
+.timer-card-action .view-all {
+  color: #fff;
+}
+
+div#displayClock {
+  font-size: 25px;
+}
+
+div#displayClock small {
+  font-size: 15px;
+}
+
+.remote-btn {
+  font-size: 12px;
+  padding: 9px 10px;
+  height: 28px;
+  line-height: 8px;
+  color: #000;
+  background-color: #fff;
+  letter-spacing: normal;
+  margin-right: 5px;
+}
+
+select#drp-selector {
+  font-size: 12px;
+  padding: 90 10px;
+  height: 28px;
+  line-height: 8px;
+  color: #000;
+  background-color: #fff;
+  letter-spacing: normal;
+  border-radius: 4px;
+  border: 0;
+}
+
+.leave-balance-action {
+  flex-direction: column;
+  align-items: flex-start;
+  height: auto;
+}
+
+.leave-balance-action a {
+  color: #288bce;
+  text-decoration: none;
+}
+
+/*tabbing section*/
+.tabbing-actions {
+  padding-left: 52px;
+}
+
+.event-card .tab-icon {
+  width: 22px;
+  height: 22px;
+  margin-right: 5px;
+  font-size: 12px;
+  line-height: 22px;
+  border-radius: 50%;
+}
+.event-card  span.count {
+  margin-right: 5px;
+}
+.event-card .birthday.tab-icon {
+  background-color: #f9e7e7;
+  color: #fc8e8f;
+}
+
+.event-card .anniversary.tab-icon {
+  background-color: #e8efce;
+  color: #a5b85c;
+}
+
+.event-card .joinees.tab-icon {
+  background-color: #e8e3f7;
+  color: #998dbd;
+}

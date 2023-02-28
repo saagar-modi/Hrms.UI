@@ -1,0 +1,675 @@
+<div class="page-wrapper">
+  <div class="page-content container-fluid">
+    <div class="row">
+      <div class="col-lg-4">
+        <div class="crms-title row mb-4">
+          <div class="col">
+            <h3 class="page-title">
+              <span>Quick Actions</span>
+            </h3>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-12 mb-3">
+            <mat-card class="inbox-card">
+              <mat-card-header class="mb-2">
+                <mat-card-title class="inbox-card-title card-title">Inbox</mat-card-title>
+              </mat-card-header>
+              <mat-card-content class="inbox-card-content d-flex align-items-center">
+                <div class="message-count">
+                  <span class="message-number">2</span>
+                </div>
+                <p class="ms-3"> Tasks waiting for your approval. Please click on take action for more details. </p>
+                <mat-card-actions class="inbox-card-action ms-2">
+                  <button mat-raised-button>Take Action</button>
+                </mat-card-actions>
+              </mat-card-content>
+            </mat-card>
+          </div>
+          <div class="col-12 mb-3">
+            <mat-card class="holidays-card">
+              <mat-card-header class="mb-2 d-flex justify-content-between align-items-center">
+                <mat-card-title class="holiday-card-title card-title">Holidays</mat-card-title>
+                <mat-card-actions class="holiday-card-action ms-2">
+                  <a mat-button href="#" target="_blank">View All</a>
+                </mat-card-actions>
+              </mat-card-header>
+              <div id="myCarousel" class="carousel slide" data-bs-ride="carousel">
+                <!-- Wrapper for carousel items -->
+                <div class="carousel-inner">
+                  <div class="carousel-item active">
+                    <mat-card-content class="holidays-card-content">
+                      <div class="holiday-desc">
+                        <h2 class="holidays-day mb-2">Dhuleti</h2>
+                        <h6 class="holidays-date">Wed, 08 March, 2023</h6>
+                      </div>
+                    </mat-card-content>
+                  </div>
+                  <div class="carousel-item">
+                    <mat-card-content class="holidays-card-content">
+                      <div class="holiday-desc">
+                        <h2 class="holidays-day mb-2">Dhuleti</h2>
+                        <h6 class="holidays-date">Wed, 08 March, 2023</h6>
+                      </div>
+                    </mat-card-content>
+                  </div>
+                  <div class="carousel-item">
+                    <mat-card-content class="holidays-card-content">
+                      <div class="holiday-desc">
+                        <h2 class="holidays-day mb-2">Dhuleti</h2>
+                        <h6 class="holidays-date">Wed, 08 March, 2023</h6>
+                      </div>
+                    </mat-card-content>
+                  </div>
+                </div>
+                <!-- Carousel controls -->
+                <a class="carousel-control-prev" href="#myCarousel" data-bs-slide="prev">
+                  <span class="carousel-control-prev-icon"></span>
+                </a>
+                <a class="carousel-control-next" href="#myCarousel" data-bs-slide="next">
+                  <span class="carousel-control-next-icon"></span>
+                </a>
+              </div>
+            </mat-card>
+          </div>
+          <div class="col-12 mb-3">
+            <mat-card class="leave-card no-leave">
+              <mat-card-header class="mb-4 d-flex justify-content-between align-items-center">
+                <mat-card-title class="leave-card-title card-title">On Leave Today</mat-card-title>
+              </mat-card-header>
+              <mat-card-content class="leave-card-content">
+                <h5 class="content-title">Everyone working today!</h5>
+                <p>No one is on leave today</p>
+              </mat-card-content>
+            </mat-card>
+          </div>
+          <div class="col-12 mb-3">
+            <mat-card class="leave-card">
+              <mat-card-header class="mb-4 d-flex justify-content-between align-items-center">
+                <mat-card-title class="leave-card-title card-title">On Leave Today</mat-card-title>
+              </mat-card-header>
+              <mat-card-content class="leave-card-content">
+                <div class="d-flex flex-wrap">
+                  <div class="on-leave-block text-center p-1" matTooltip="Rajasri Kumar" aria-label="Button that displays a tooltip when focused or hovered over" matTooltipPosition="above">
+                    <div class="avatar mb-1"> {{getInitials('john','doe')}}</div>
+                    <p class="on-leave-name m-0">rajasri Kumar</p>
+                  </div>
+                  <div class="on-leave-block text-center p-1" matTooltip="Info about the action" aria-label="Button that displays a tooltip when focused or hovered over" matTooltipPosition="above">
+                    <div class="avatar mb-1"> {{getInitials('kohn','doe')}}</div>
+                    <p class="on-leave-name m-0">john doesdvdv</p>
+                  </div>
+                  <div class="on-leave-block text-center p-1" matTooltip="Info about the action" aria-label="Button that displays a tooltip when focused or hovered over" matTooltipPosition="above">
+                    <div class="avatar mb-1">
+                      <img src="assets/images/testi-person.jpg">
+                    </div>
+                    <p class="on-leave-name m-0">john doerdvdv</p>
+                  </div>
+                  <div class="on-leave-block text-center p-1">
+                    <div class="avatar mb-1"> {{getInitials('john','doe')}}</div>
+                    <p class="on-leave-name m-0">john doe</p>
+                  </div>
+                  <div class="on-leave-block text-center p-1">
+                    <div class="avatar mb-1"> {{getInitials('fohn','doe')}}</div>
+                    <p class="on-leave-name m-0">john doe</p>
+                  </div>
+                  <div class="on-leave-block text-center p-1">
+                    <div class="avatar mb-1"> {{getInitials('gohn','doe')}}</div>
+                    <p class="on-leave-name m-0">john doe</p>
+                  </div>
+                  <div class="on-leave-block text-center p-1">
+                    <div class="avatar mb-1"> {{getInitials('rohn','doe')}}</div>
+                    <p class="on-leave-name m-0">john doe</p>
+                  </div>
+                  <div class="on-leave-block text-center p-1">
+                    <div class="avatar mb-1"> {{getInitials('gohn','doe')}}</div>
+                    <p class="on-leave-name m-0">john doe</p>
+                  </div>
+                  <div class="on-leave-block text-center p-1">
+                    <div class="avatar mb-1"> {{getInitials('tohn','doe')}}</div>
+                    <p class="on-leave-name m-0">john doe</p>
+                  </div>
+                  <div class="on-leave-block text-center p-1">
+                    <div class="avatar mb-1 "> {{getInitials('fohn','doe')}}</div>
+                    <p class="on-leave-name m-0">john doe</p>
+                  </div>
+                  <div class="on-leave-block text-center p-1">
+                    <div class="avatar mb-1 "> {{getInitials('tohn','doe')}}</div>
+                    <p class="on-leave-name m-0">john doe</p>
+                  </div>
+                </div>
+              </mat-card-content>
+            </mat-card>
+          </div>
+          <div class="col-12 mb-3">
+            <mat-card class="leave-card remote-work">
+              <mat-card-header class="mb-4 d-flex justify-content-between align-items-center">
+                <mat-card-title class="remote-work-card-title leave-card-title card-title">Working Remontely</mat-card-title>
+              </mat-card-header>
+              <mat-card-content class="remote-work-card-content leave-card-content">
+                <div class="d-flex flex-wrap">
+                  <div class="on-leave-block text-center p-1" matTooltip="Rajasri Kumar" aria-label="Button that displays a tooltip when focused or hovered over" matTooltipPosition="above">
+                    <div class="avatar mb-1 remontely"> {{getInitials('john','doe')}}
+                      <span class="remote">
+                          <mat-icon>home</mat-icon>
+                        </span>
+                    </div>
+                    <p class="on-leave-name m-0">rajasri Kumar</p>
+                  </div>
+                  <div class="on-leave-block text-center p-1" matTooltip="Info about the action" aria-label="Button that displays a tooltip when focused or hovered over" matTooltipPosition="above">
+                    <div class="avatar mb-1 remontely"> {{getInitials('kohn','doe')}}
+                      <span class="remote">
+                          <mat-icon>home</mat-icon>
+                        </span>
+                    </div>
+                    <p class="on-leave-name m-0">john doesdvdv</p>
+                  </div>
+                  <div class="on-leave-block text-center p-1" matTooltip="Info about the action" aria-label="Button that displays a tooltip when focused or hovered over" matTooltipPosition="above">
+                    <div class="avatar mb-1 remontely">
+                      <img src="assets/images/testi-person.jpg">
+                      <span class="remote">
+                          <mat-icon>home</mat-icon>
+                        </span>
+                    </div>
+                    <p class="on-leave-name m-0">john doerdvdv</p>
+                  </div>
+                </div>
+              </mat-card-content>
+            </mat-card>
+          </div>
+          <div class="col-12 mb-3">
+            <mat-card class="timer-card ">
+              <mat-card-header class="d-flex justify-content-between align-items-center p-0">
+                <mat-card-title class="timer-work-card-title card-title">Time Today- Feb 02, 2023 Thu</mat-card-title>
+                <mat-card-actions class="timer-card-action ms-2">
+                  <a mat-button href="#" target="_blank" class="view-all">View All</a>
+                </mat-card-actions>
+              </mat-card-header>
+              <mat-card-content class="timer-work-card-content p-0">
+                <div class="d-flex justify-content-between">
+                  <div class="current-time-block">
+                    <span class="text-uppercase cur-time-title">CURRENT TIME</span>
+                    <div id="displayClock" class="clock">04:21 <small>:20 PM</small>
+                    </div>
+                  </div>
+                  <mat-card-actions class="timer-card-action ms-2">
+                    <button mat-button class="remote-btn">Remote Clock-in</button>
+                    <form>
+                      <select name="drp-selector" id="drp-selector">
+                        <option value="other">Other</option>
+                        <option value="option 1">Option 1</option>
+                        <option value="option 2">Option 2</option>
+                        <option value="option 3">Option 3</option>
+                      </select>
+                    </form>
+                  </mat-card-actions>
+                </div>
+              </mat-card-content>
+            </mat-card>
+          </div>
+          <div class="col-12 mb-3">
+            <mat-card class="leave-balance-card ">
+              <mat-card-header class="d-flex justify-content-between align-items-center mb-3">
+                <mat-card-title class="leave-balance-card-title card-title">Leave Balances</mat-card-title>
+              </mat-card-header>
+              <mat-card-content class="leave-balance-card-content">
+                <div class="d-flex justify-content-between">
+                  <div class="leave-balance-block"></div>
+                  <mat-card-actions class="leave-balance-action ms-2">
+                    <a href="#" target="_blank">Apply Leave</a>
+                    <a href="#" target="_blank">View All Balances</a>
+                  </mat-card-actions>
+                </div>
+              </mat-card-content>
+            </mat-card>
+          </div>
+        </div>
+      </div>
+      <div class="col-lg-7 tabbing-actions">
+        <div class="row">
+          <div class="col-12">
+            <mat-tab-group mat-stretch-tabs="false" class="home-tabbing">
+              <mat-tab label="Organization">
+                <div class="tab-content pt-4">
+                  <div class="col-12">
+                    <mat-card class="event-card">
+                      <mat-tab-group mat-stretch-tabs="false">
+                        <mat-tab>
+                          <ng-template mat-tab-label> Today </ng-template>
+                          <mat-divider></mat-divider>
+                          <div class="birthday-block">
+                            <mat-card-header class="mb-4 d-flex justify-content-between align-items-center">
+                              <mat-card-title class="leave-card-title card-title">Birthdays Today</mat-card-title>
+                            </mat-card-header>
+                            <mat-card-content class="leave-card-content">
+                              <div class="d-flex flex-wrap">
+                                <div class="on-leave-block text-center p-1" matTooltip="Rajasri Kumar" aria-label="Button that displays a tooltip when focused or hovered over" matTooltipPosition="above">
+                                  <div class="avatar mb-1">
+                                    <img src="assets/images/person-6.jpg">
+                                  </div>
+                                  <p class="on-leave-name m-0">rajasri Kumar</p>
+                                </div>
+                                <div class="on-leave-block text-center p-1" matTooltip="Info about the action" aria-label="Button that displays a tooltip when focused or hovered over" matTooltipPosition="above">
+                                  <div class="avatar mb-1">
+                                    {{getInitials('kohn','doe')}}
+                                  </div>
+                                  <p class="on-leave-name m-0">john doesdvdv</p>
+                                </div>
+                                <div class="on-leave-block text-center p-1" matTooltip="Info about the action" aria-label="Button that displays a tooltip when focused or hovered over" matTooltipPosition="above">
+                                  <div class="avatar mb-1">
+                                    <img src="assets/images/testi-person.jpg">
+                                  </div>
+                                  <p class="on-leave-name m-0">john doerdvdv</p>
+                                </div>
+                                <div class="on-leave-block text-center p-1" matTooltip="Rajasri Kumar" aria-label="Button that displays a tooltip when focused or hovered over" matTooltipPosition="above">
+                                  <div class="avatar mb-1">
+                                    <img src="assets/images/person-2.jpg">
+                                  </div>
+                                  <p class="on-leave-name m-0">rajasri Kumar</p>
+                                </div>
+                                <div class="on-leave-block text-center p-1" matTooltip="Info about the action" aria-label="Button that displays a tooltip when focused or hovered over" matTooltipPosition="above">
+                                  <div class="avatar mb-1">
+                                    {{getInitials('kohn','doe')}}
+                                  </div>
+                                  <p class="on-leave-name m-0">john doesdvdv</p>
+                                </div>
+                                <div class="on-leave-block text-center p-1" matTooltip="Info about the action" aria-label="Button that displays a tooltip when focused or hovered over" matTooltipPosition="above">
+                                  <div class="avatar mb-1">
+                                    <img src="assets/images/person-8.jpg">
+                                  </div>
+                                  <p class="on-leave-name m-0">john doerdvdv</p>
+                                </div>
+                              </div>
+                            </mat-card-content>
+                          </div>
+                          <mat-divider></mat-divider>
+                          <div class="aniversaries-block">
+                            <mat-card-header class="mb-4 d-flex justify-content-between align-items-center">
+                              <mat-card-title class="leave-card-title card-title"> Work Anniversaries Today</mat-card-title>
+                            </mat-card-header>
+                            <mat-card-content class="leave-card-content">
+                              <div class="d-flex flex-wrap">
+                                <div class="on-leave-block text-center p-1" matTooltip="Rajasri Kumar" aria-label="Button that displays a tooltip when focused or hovered over" matTooltipPosition="above">
+                                  <div class="avatar mb-1">
+                                    {{getInitials('john','doe')}}
+                                  </div>
+                                  <p class="on-leave-name m-0">rajasri Kumar</p>
+                                </div>
+                                <div class="on-leave-block text-center p-1" matTooltip="Info about the action" aria-label="Button that displays a tooltip when focused or hovered over" matTooltipPosition="above">
+                                  <div class="avatar mb-1">
+                                    <img src="assets/images/person-7.jpg">
+                                  </div>
+                                  <p class="on-leave-name m-0">john doesdvdv</p>
+                                </div>
+                                <div class="on-leave-block text-center p-1" matTooltip="Info about the action" aria-label="Button that displays a tooltip when focused or hovered over" matTooltipPosition="above">
+                                  <div class="avatar mb-1">
+                                    <img src="assets/images/person-3.jpg">
+                                  </div>
+                                  <p class="on-leave-name m-0">john doerdvdv</p>
+                                </div>
+                                <div class="on-leave-block text-center p-1" matTooltip="Rajasri Kumar" aria-label="Button that displays a tooltip when focused or hovered over" matTooltipPosition="above">
+                                  <div class="avatar mb-1">
+                                    <img src="assets/images/person-4.jpg">
+                                  </div>
+                                  <p class="on-leave-name m-0">rajasri Kumar</p>
+                                </div>
+                                <div class="on-leave-block text-center p-1" matTooltip="Info about the action" aria-label="Button that displays a tooltip when focused or hovered over" matTooltipPosition="above">
+                                  <div class="avatar mb-1">
+                                    {{getInitials('kohn','doe')}}
+                                  </div>
+                                  <p class="on-leave-name m-0">john doesdvdv</p>
+                                </div>
+                              </div>
+                            </mat-card-content>
+                          </div>
+                          <mat-divider></mat-divider>
+                          <div class="joinees-block">
+                            <mat-card-header class="mb-4 d-flex justify-content-between align-items-center">
+                              <mat-card-title class="leave-card-title card-title"> New Joinees Today</mat-card-title>
+                            </mat-card-header>
+                            <mat-card-content class="leave-card-content">
+                              <div class="d-flex flex-wrap">
+                                <div class="on-leave-block text-center p-1" matTooltip="Rajasri Kumar" aria-label="Button that displays a tooltip when focused or hovered over" matTooltipPosition="above">
+                                  <div class="avatar mb-1">
+                                    {{getInitials('john','doe')}}
+                                  </div>
+                                  <p class="on-leave-name m-0">rajasri Kumar</p>
+                                </div>
+                                <div class="on-leave-block text-center p-1" matTooltip="Info about the action" aria-label="Button that displays a tooltip when focused or hovered over" matTooltipPosition="above">
+                                  <div class="avatar mb-1">
+                                    {{getInitials('kohn','doe')}}
+                                  </div>
+                                  <p class="on-leave-name m-0">john doesdvdv</p>
+                                </div>
+                                <div class="on-leave-block text-center p-1" matTooltip="Info about the action" aria-label="Button that displays a tooltip when focused or hovered over" matTooltipPosition="above">
+                                  <div class="avatar mb-1">
+                                    <img src="assets/images/person-8.jpg">
+                                  </div>
+                                  <p class="on-leave-name m-0">john doerdvdv</p>
+                                </div>
+                                <div class="on-leave-block text-center p-1" matTooltip="Rajasri Kumar" aria-label="Button that displays a tooltip when focused or hovered over" matTooltipPosition="above">
+                                  <div class="avatar mb-1">
+                                    <img src="assets/images/person-5.jpg">
+                                  </div>
+                                  <p class="on-leave-name m-0">rajasri Kumar</p>
+                                </div>
+                                <div class="on-leave-block text-center p-1" matTooltip="Info about the action" aria-label="Button that displays a tooltip when focused or hovered over" matTooltipPosition="above">
+                                  <div class="avatar mb-1">
+                                    {{getInitials('kohn','doe')}}
+                                  </div>
+                                  <p class="on-leave-name m-0">john doesdvdv</p>
+                                </div>
+                                <div class="on-leave-block text-center p-1" matTooltip="Info about the action" aria-label="Button that displays a tooltip when focused or hovered over" matTooltipPosition="above">
+                                  <div class="avatar mb-1">
+                                    <img src="assets/images/person-2.jpg">
+                                  </div>
+                                  <p class="on-leave-name m-0">john doerdvdv</p>
+                                </div>
+                                <div class="on-leave-block text-center p-1" matTooltip="Info about the action" aria-label="Button that displays a tooltip when focused or hovered over" matTooltipPosition="above">
+                                  <div class="avatar mb-1">
+                                    <img src="assets/images/person-1.jpg">
+                                  </div>
+                                  <p class="on-leave-name m-0">john doerdvdv</p>
+                                </div>
+                              </div>
+                            </mat-card-content>
+                          </div>
+                        </mat-tab>
+                        <mat-tab class="birthday-tab">
+                          <ng-template mat-tab-label>
+                            <mat-icon class="tab-icon birthday">cake</mat-icon>
+                            <span class="count">1</span> Birthday
+                          </ng-template>
+                          <mat-divider></mat-divider>
+                          <div class="birthday-block">
+                            <mat-card-header class="mb-4 d-flex justify-content-between align-items-center">
+                              <mat-card-title class="leave-card-title card-title">Birthdays Today</mat-card-title>
+                            </mat-card-header>
+                            <mat-card-content class="leave-card-content mb-3">
+                              <div class="d-flex flex-wrap">
+                                <div class="on-leave-block text-center p-1" matTooltip="Rajasri Kumar" aria-label="Button that displays a tooltip when focused or hovered over" matTooltipPosition="above">
+                                  <div class="avatar mb-1">
+                                    {{getInitials('john','doe')}}
+                                  </div>
+                                  <p class="on-leave-name m-0">rajasri Kumar</p>
+                                </div>
+                                <div class="on-leave-block text-center p-1" matTooltip="Info about the action" aria-label="Button that displays a tooltip when focused or hovered over" matTooltipPosition="above">
+                                  <div class="avatar mb-1">
+                                    {{getInitials('kohn','doe')}}
+                                  </div>
+                                  <p class="on-leave-name m-0">john doesdvdv</p>
+                                </div>
+                                <div class="on-leave-block text-center p-1" matTooltip="Info about the action" aria-label="Button that displays a tooltip when focused or hovered over" matTooltipPosition="above">
+                                  <div class="avatar mb-1">
+                                    <img src="assets/images/testi-person.jpg">
+                                  </div>
+                                  <p class="on-leave-name m-0">john doerdvdv</p>
+                                </div>
+                              </div>
+                            </mat-card-content>
+                            <mat-divider></mat-divider>
+                            <mat-card-header class="mb-4 d-flex justify-content-between align-items-center">
+                              <mat-card-title class="leave-card-title card-title">Next 7 Days</mat-card-title>
+                            </mat-card-header>
+                            <mat-card-content class="leave-card-content">
+                              <div class="d-flex flex-wrap">
+                                <div class="on-leave-block text-center p-1" matTooltip="Rajasri Kumar" aria-label="Button that displays a tooltip when focused or hovered over" matTooltipPosition="above">
+                                  <div class="avatar mb-1">
+                                    <img src="assets/images/person-2.jpg">
+                                  </div>
+                                  <p class="on-leave-name m-0">rajasri Kumar</p>
+                                  <p class="coming-birthday-date">25 Feb</p>
+                                </div>
+                                <div class="on-leave-block text-center p-1" matTooltip="Info about the action" aria-label="Button that displays a tooltip when focused or hovered over" matTooltipPosition="above">
+                                  <div class="avatar mb-1">
+                                    {{getInitials('kohn','doe')}}
+                                  </div>
+                                  <p class="on-leave-name m-0">john doesdvdv</p>
+                                  <p class="coming-birthday-date">25 Feb</p>
+                                </div>
+                                <div class="on-leave-block text-center p-1" matTooltip="Info about the action" aria-label="Button that displays a tooltip when focused or hovered over" matTooltipPosition="above">
+                                  <div class="avatar mb-1">
+                                    <img src="assets/images/person-8.jpg">
+                                  </div>
+                                  <p class="on-leave-name m-0">john doerdvdv</p>
+                                  <p class="coming-birthday-date">25 Feb</p>
+                                </div>
+                                <div class="on-leave-block text-center p-1" matTooltip="Info about the action" aria-label="Button that displays a tooltip when focused or hovered over" matTooltipPosition="above">
+                                  <div class="avatar mb-1">
+                                    {{getInitials('kohn','doe')}}
+                                  </div>
+                                  <p class="on-leave-name m-0">john doesdvdv</p>
+                                  <p class="coming-birthday-date">25 Feb</p>
+                                </div>
+                                <div class="on-leave-block text-center p-1" matTooltip="Info about the action" aria-label="Button that displays a tooltip when focused or hovered over" matTooltipPosition="above">
+                                  <div class="avatar mb-1">
+                                    <img src="assets/images/person-4.jpg">
+                                  </div>
+                                  <p class="on-leave-name m-0">john doerdvdv</p>
+                                  <p class="coming-birthday-date">25 Feb</p>
+                                </div>
+                              </div>
+                            </mat-card-content>
+                          </div>
+                        </mat-tab>
+                        <mat-tab class="anniversary-tab">
+                          <ng-template mat-tab-label>
+                            <mat-icon class="tab-icon anniversary">celebration</mat-icon>
+                            <span class="count">3</span> Work Anniversaries
+                          </ng-template>
+                          <mat-divider></mat-divider>
+                          <div class="anniversary-block">
+                            <mat-card-header class="mb-4 d-flex justify-content-between align-items-center">
+                              <mat-card-title class="leave-card-title card-title">Work Anniversaries Today</mat-card-title>
+                            </mat-card-header>
+                            <mat-card-content class="leave-card-content mb-3">
+                              <div class="d-flex flex-wrap">
+                                <div class="on-leave-block text-center p-1" matTooltip="Rajasri Kumar" aria-label="Button that displays a tooltip when focused or hovered over" matTooltipPosition="above">
+                                  <div class="avatar mb-1">
+                                    <img src="assets/images/person-8.jpg">
+                                  </div>
+                                  <p class="on-leave-name m-0">rajasri Kumar</p>
+                                </div>
+                                <div class="on-leave-block text-center p-1" matTooltip="Info about the action" aria-label="Button that displays a tooltip when focused or hovered over" matTooltipPosition="above">
+                                  <div class="avatar mb-1">
+                                    <img src="assets/images/person-6.jpg">
+                                  </div>
+                                  <p class="on-leave-name m-0">john doesdvdv</p>
+                                </div>
+                                <div class="on-leave-block text-center p-1" matTooltip="Info about the action" aria-label="Button that displays a tooltip when focused or hovered over" matTooltipPosition="above">
+                                  <div class="avatar mb-1">
+                                    <img src="assets/images/person-1.jpg">
+                                  </div>
+                                  <p class="on-leave-name m-0">john doerdvdv</p>
+                                </div>
+                                <div class="on-leave-block text-center p-1" matTooltip="Info about the action" aria-label="Button that displays a tooltip when focused or hovered over" matTooltipPosition="above">
+                                  <div class="avatar mb-1">
+                                    <img src="assets/images/person-6.jpg">
+                                  </div>
+                                  <p class="on-leave-name m-0">john doerdvdv</p>
+                                </div><div class="on-leave-block text-center p-1" matTooltip="Info about the action" aria-label="Button that displays a tooltip when focused or hovered over" matTooltipPosition="above">
+                                <div class="avatar mb-1">
+                                  <img src="assets/images/person-8.jpg">
+                                </div>
+                                <p class="on-leave-name m-0">john doerdvdv</p>
+                              </div><div class="on-leave-block text-center p-1" matTooltip="Info about the action" aria-label="Button that displays a tooltip when focused or hovered over" matTooltipPosition="above">
+                                <div class="avatar mb-1">
+                                  <img src="assets/images/person-5.jpg">
+                                </div>
+                                <p class="on-leave-name m-0">john doerdvdv</p>
+                              </div>
+                              </div>
+                            </mat-card-content>
+                            <mat-divider></mat-divider>
+                            <mat-card-header class="mb-4 d-flex justify-content-between align-items-center">
+                              <mat-card-title class="leave-card-title card-title">Next 30 Days</mat-card-title>
+                            </mat-card-header>
+                            <mat-card-content class="leave-card-content">
+                              <div class="d-flex flex-wrap">
+                                <div class="on-leave-block text-center p-1" matTooltip="Rajasri Kumar" aria-label="Button that displays a tooltip when focused or hovered over" matTooltipPosition="above">
+                                  <div class="avatar mb-1">
+                                    <img src="assets/images/person-1.jpg">
+                                  </div>
+                                  <p class="on-leave-name m-0">rajasri Kumar</p>
+                                  <p class="coming-birthday-date">25 Feb</p>
+                                </div>
+                                <div class="on-leave-block text-center p-1" matTooltip="Info about the action" aria-label="Button that displays a tooltip when focused or hovered over" matTooltipPosition="above">
+                                  <div class="avatar mb-1">
+                                    {{getInitials('kohn','doe')}}
+                                  </div>
+                                  <p class="on-leave-name m-0">john doesdvdv</p>
+                                  <p class="coming-birthday-date">25 Feb</p>
+                                </div>
+                                <div class="on-leave-block text-center p-1" matTooltip="Info about the action" aria-label="Button that displays a tooltip when focused or hovered over" matTooltipPosition="above">
+                                  <div class="avatar mb-1">
+                                    <img src="assets/images/person-5.jpg">
+                                  </div>
+                                  <p class="on-leave-name m-0">john doerdvdv</p>
+                                  <p class="coming-birthday-date">25 Feb</p>
+                                </div>
+                                <div class="on-leave-block text-center p-1" matTooltip="Info about the action" aria-label="Button that displays a tooltip when focused or hovered over" matTooltipPosition="above">
+                                  <div class="avatar mb-1">
+                                    <img src="assets/images/person-8.jpg">
+                                  </div>
+                                  <p class="on-leave-name m-0">john doerdvdv</p>
+                                  <p class="coming-birthday-date">25 Feb</p>
+                                </div>
+                                <div class="on-leave-block text-center p-1" matTooltip="Info about the action" aria-label="Button that displays a tooltip when focused or hovered over" matTooltipPosition="above">
+                                  <div class="avatar mb-1">
+                                    {{getInitials('kohn','doe')}}
+                                  </div>
+                                  <p class="on-leave-name m-0">john doesdvdv</p>
+                                  <p class="coming-birthday-date">25 Feb</p>
+                                </div>
+                              </div>
+                            </mat-card-content>
+                          </div>
+                        </mat-tab>
+                        <mat-tab class="joinees-tab">
+                          <ng-template mat-tab-label>
+                            <mat-icon class="tab-icon joinees">group</mat-icon>
+                            <span class="count">1</span> New joinees
+                          </ng-template>
+                          <mat-divider></mat-divider>
+                          <div class="joinees-block">
+                            <mat-card-header class="mb-4 d-flex justify-content-between align-items-center">
+                              <mat-card-title class="leave-card-title card-title">Welcome New Joinee In This Month</mat-card-title>
+                            </mat-card-header>
+                            <mat-card-content class="leave-card-content">
+                              <div class="d-flex flex-wrap">
+                                <div class="on-leave-block text-center p-1" matTooltip="Rajasri Kumar" aria-label="Button that displays a tooltip when focused or hovered over" matTooltipPosition="above">
+                                  <div class="avatar mb-1">
+                                    <img src="assets/images/person-1.jpg">
+                                  </div>
+                                  <p class="on-leave-name m-0">rajasri Kumar</p>
+                                  <p class="coming-birthday-date">25 Feb</p>
+                                </div>
+                                <div class="on-leave-block text-center p-1" matTooltip="Info about the action" aria-label="Button that displays a tooltip when focused or hovered over" matTooltipPosition="above">
+                                  <div class="avatar mb-1">
+                                    {{getInitials('kohn','doe')}}
+                                  </div>
+                                  <p class="on-leave-name m-0">john doesdvdv</p>
+                                  <p class="coming-birthday-date">25 Feb</p>
+                                </div>
+                                <div class="on-leave-block text-center p-1" matTooltip="Info about the action" aria-label="Button that displays a tooltip when focused or hovered over" matTooltipPosition="above">
+                                  <div class="avatar mb-1">
+                                    <img src="assets/images/person-5.jpg">
+                                  </div>
+                                  <p class="on-leave-name m-0">john doerdvdv</p>
+                                  <p class="coming-birthday-date">25 Feb</p>
+                                </div>
+                                <div class="on-leave-block text-center p-1" matTooltip="Info about the action" aria-label="Button that displays a tooltip when focused or hovered over" matTooltipPosition="above">
+                                  <div class="avatar mb-1">
+                                    <img src="assets/images/person-8.jpg">
+                                  </div>
+                                  <p class="on-leave-name m-0">john doerdvdv</p>
+                                  <p class="coming-birthday-date">25 Feb</p>
+                                </div>
+                                <div class="on-leave-block text-center p-1" matTooltip="Info about the action" aria-label="Button that displays a tooltip when focused or hovered over" matTooltipPosition="above">
+                                  <div class="avatar mb-1">
+                                    {{getInitials('kohn','doe')}}
+                                  </div>
+                                  <p class="on-leave-name m-0">john doesdvdv</p>
+                                  <p class="coming-birthday-date">25 Feb</p>
+                                </div>
+                                <div class="on-leave-block text-center p-1" matTooltip="Info about the action" aria-label="Button that displays a tooltip when focused or hovered over" matTooltipPosition="above">
+                                  <div class="avatar mb-1">
+                                    <img src="assets/images/person-4.jpg">
+                                  </div>
+                                  <p class="on-leave-name m-0">john doerdvdv</p>
+                                  <p class="coming-birthday-date">25 Feb</p>
+                                </div>
+                              </div>
+                            </mat-card-content>
+                          </div>
+                        </mat-tab>
+                      </mat-tab-group>
+                    </mat-card>
+                  </div>
+                </div>
+              </mat-tab>
+              <mat-tab label="IT" class="home-tabbing">
+                <div class="tab-content pt-4">
+                  <div class="col-12 mb-4">
+                    <mat-card class="example-card">
+                      <mat-card-header>
+                        <img mat-card-avatar >
+                        <mat-card-title>Shiba Inu</mat-card-title>
+                        <mat-card-subtitle>Dog Breed</mat-card-subtitle>
+                      </mat-card-header>
+                      <mat-card-content>
+                        <p>This card indeterminates progress bar.</p>
+                        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Officia sequi eaque veritatis neque iure iusto dolorem officiis sunt earum nulla facere repellendus, minus, eveniet sit voluptates numquam ullam quibusdam eligendi!</p>
+                      </mat-card-content>
+                      <mat-card-actions>
+                        <button mat-button>LIKE</button>
+                        <button mat-button>SHARE</button>
+                      </mat-card-actions>
+                    </mat-card>
+                  </div>
+                  <div class="col-12 mb-4">
+                    <mat-card class="example-card">
+                      <mat-card-header>
+                        <mat-card-subtitle>Dog Breed</mat-card-subtitle>
+                        <mat-card-title>Shiba Inu</mat-card-title>
+                      </mat-card-header>
+                      <mat-card-content>
+                        <p>This card has divider and indeterminate progress as footer</p>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eius, vitae voluptatum laboriosam omnis dolor quam sit numquam ad architecto minus neque debitis distinctio suscipit unde maiores veniam est magni eum?</p>
+                        <mat-divider></mat-divider>
+                      </mat-card-content>
+                      <mat-card-actions>
+                        <button mat-button>LIKE</button>
+                        <button mat-button>SHARE</button>
+                      </mat-card-actions>
+                    </mat-card>
+                  </div>
+                  <div class="col-12 mb-4">
+                    <mat-card class="example-card">
+                      <mat-card-header>
+                        <div mat-card-avatar class="example-header-image" src="https://material.angular.io/assets/img/examples/shiba2.jpg"></div>
+                        <mat-card-title>Shiba Inu</mat-card-title>
+                        <mat-card-subtitle>Dog Breed</mat-card-subtitle>
+                      </mat-card-header>
+                      <img mat-card-image src="https://material.angular.io/assets/img/examples/shiba2.jpg" alt="Photo of a Shiba Inu">
+                      <mat-card-content>
+                        <p>
+                          The Shiba Inu is the smallest of the six original and distinct spitz breeds of dog from Japan.
+                          A small, agile dog that copes very well with mountainous terrain, the Shiba Inu was originally
+                          bred for hunting.
+                        </p>
+                      </mat-card-content>
+                      <mat-card-actions>
+                        <button mat-button>LIKE</button>
+                        <button mat-button>SHARE</button>
+                      </mat-card-actions>
+                    </mat-card>
+                  </div>
+                </div>
+              </mat-tab>
+            </mat-tab-group>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>

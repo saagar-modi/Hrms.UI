@@ -1,0 +1,30 @@
+<ng-container>
+
+  <mat-sidenav-container class="container">
+    <mat-sidenav #sidenav mode="side" opened class="app-sidenav">
+      <a routerLink="/dashboard"><mat-icon>dashboard</mat-icon> Dashboard</a><br>
+      <a routerLink="/students"><mat-icon>perm_identity</mat-icon> Students</a>
+    </mat-sidenav>
+
+    <mat-sidenav-content>
+      <div class="content">
+        <div class="toolbar">
+          <mat-toolbar color="primary">
+            <mat-icon (click)="sidenav.toggle()" class="cursor-pointer">menu</mat-icon>
+            <span>webzlabz</span>
+          </mat-toolbar>
+        </div>
+        <div class="main">
+          <router-outlet></router-outlet>
+        </div>
+      </div>
+
+
+    </mat-sidenav-content>
+  </mat-sidenav-container>
+
+</ng-container>
+
+
+
+

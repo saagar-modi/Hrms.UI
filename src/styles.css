@@ -1,0 +1,99 @@
+/* You can add global styles to this file, and also import other style files */
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap');
+button,
+input,
+optgroup,
+select,
+textarea,html input[type="button"],
+input[type="reset"],
+input[type="submit"],button[disabled],
+html input[disabled],button::-moz-focus-inner,
+input::-moz-focus-inner, input[type="checkbox"],
+input[type="radio"], input[type="number"]::-webkit-inner-spin-button,
+input[type="number"]::-webkit-outer-spin-button, input[type="search"], input[type="search"]::-webkit-search-cancel-button,
+input[type="search"]::-webkit-search-decoration{
+  border:none;
+  background-image:none;
+  background-color:transparent;
+  -webkit-box-shadow: none;
+  -moz-box-shadow: none;
+  box-shadow: none;
+}
+input:focus,select:focus {
+  outline: none;
+  border:none;
+  border: 0 !important;
+}
+body {
+  font-family: Inter,sans-serif !important;
+  font-size: .9375rem !important;
+  color: #1f1f1f !important;
+  background-color: #f7f7f7 !important;
+  min-height: 100% !important;
+  overflow-x: hidden !important;
+}
+.text-muted {color: #8e8e8e}
+.page-content{padding: 30px;}
+.page-title {
+  color: #1f1f1f;
+  font-size: 26px;
+  font-weight: 500;
+  margin-bottom: 0;
+}
+.content-component{width: 100%;}
+.card-title{font-size: 16px;}
+
+.tab-box .mat-mdc-tab-header{    border: 1px solid #ededed;
+  margin-bottom: 30px;
+  box-shadow: 0 1px 1px #0003;
+  background-color: #fff; border-radius: 4px;}
+.tab-box .mat-mdc-tab-header .mat-mdc-tab.mdc-tab{height: auto; padding: 13px 16px;}
+.tab-box  .mat-mdc-tab .mdc-tab__text-label, .tab-box  .mat-mdc-tab-link .mdc-tab__text-label{color: #888;}
+.tab-box  .mat-mdc-tab:not(.mat-mdc-tab-disabled).mdc-tab--active .mdc-tab__text-label, .tab-box .mat-mdc-tab-link:not(.mat-mdc-tab-disabled).mdc-tab--active .mdc-tab__text-label {
+  color: #495057;
+}
+.tab-box .mat-mdc-tab:not(.mat-mdc-tab-disabled) .mdc-tab-indicator__content--underline, .tab-box .mat-mdc-tab-link:not(.mat-mdc-tab-disabled) .mdc-tab-indicator__content--underline {
+  border-color: #ff9b44;
+}
+.tab-box .mdc-tab__ripple::before, .mat-mdc-tab .mat-ripple-element, .tab-box .mat-mdc-tab-header-pagination .mat-ripple-element, .mat-mdc-tab-link .mat-ripple-element {
+  background-color: #ff9b44;
+}
+
+.home-tabbing  .mat-mdc-tab .mdc-tab__text-label, .home-tabbing .mat-mdc-tab-link .mdc-tab__text-label{color: #888;}
+.home-tabbing  .mat-mdc-tab:not(.mat-mdc-tab-disabled).mdc-tab--active .mdc-tab__text-label, .home-tabbing .mat-mdc-tab-link:not(.mat-mdc-tab-disabled).mdc-tab--active .mdc-tab__text-label {
+  color: #495057;
+}
+.home-tabbing .mat-mdc-tab:not(.mat-mdc-tab-disabled) .mdc-tab-indicator__content--underline, .home-tabbing.mat-mdc-tab-link:not(.mat-mdc-tab-disabled) .mdc-tab-indicator__content--underline {
+  border-color: #ff9b44;
+}
+.home-tabbing .mdc-tab__ripple::before, .mat-mdc-tab .mat-ripple-element, .home-tabbing.mat-mdc-tab-header-pagination .mat-ripple-element, .mat-mdc-tab-link .mat-ripple-element {
+  background-color:  #ff9b44;
+}
+.mat-mdc-table .mdc-data-table__row {
+  height: 30px;
+}
+.mdc-data-table__cell{height: auto;}
+li.nav-item.not-button button .mat-badge-medium.mat-badge-overlap.mat-badge-after .mat-badge-content{color: #fff;
+  background-color: #7460ee;
+}
+.breadcrumb {
+  background-color: transparent;
+  color: #6c757d;
+  font-size: 16px;
+  font-weight: 500;
+  margin: 0;
+  padding: 0;
+}
+.breadcrumb a, .breadcrumb .breadcrumb-item a {
+  color: #333;
+  text-decoration: none;
+}
+.breadcrumb-item.active {
+  color: #6c757d;
+}
+.breadcrumb .breadcrumb-item+.breadcrumb-item:before {
+  float: left;
+  padding-right: 0.5rem;
+  color: #6c757d;
+  content: "/";
+}
